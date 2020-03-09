@@ -112,6 +112,7 @@ document.querySelectorAll('nav a').forEach ( element => {
 
 const childElement = document.createElement('a');
 childElement.textContent = "Meow"
+childElement.style.color = 'green'
 //Use createElement when creating something new to add it on without erasing other things
 
 
@@ -122,6 +123,7 @@ const secondItem = document.createElement('a');
 secondItem.textContent = "Kitty"
 
 parentElement.prepend(secondItem)
+secondItem.style.color = 'green'
 
 document.querySelectorAll('h4').forEach ( element => {
   element.style.color = "hotpink";});

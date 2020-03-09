@@ -77,5 +77,21 @@ const middlei = document.getElementById('middle-img');
 middlei.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 
-const meowcontact = document.querySelectorAll('h4')
+const meowcontact = document.querySelectorAll('.contact h4')
 meowcontact[0].textContent = siteContent['contact'] ['contact-h4']
+
+
+// const meowcontact = document.querySelector('.contact h4')
+// meowcontact.textContent = siteContent['contact'] ['contact-h4']
+//prob the right way to do it
+
+
+
+const meowadd = document.querySelectorAll('.contact p')
+meowadd[0].textContent = siteContent['contact'] ['address']
+meowadd[1].textContent = siteContent['contact'] ['phone']
+meowadd[2].textContent = siteContent['contact'] ['email']
+
+
+const meowfooter = document.querySelector('footer')
+meowfooter.textContent = siteContent['footer'] ['copyright']

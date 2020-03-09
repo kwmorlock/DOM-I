@@ -40,3 +40,99 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const meownav = document.querySelectorAll('nav a')
+meownav[0].textContent = siteContent['nav'] ['nav-item-1']
+meownav[1].textContent = siteContent['nav'] ['nav-item-2']
+meownav[2].textContent = siteContent['nav'] ['nav-item-3']
+meownav[3].textContent = siteContent['nav'] ['nav-item-4']
+meownav[4].textContent = siteContent['nav'] ['nav-item-5']
+meownav[5].textContent = siteContent['nav'] ['nav-item-6']
+
+const ctah = document.querySelector('h1');
+ctah.textContent = siteContent['cta'] ['h1'];
+
+const ctabutt = document.querySelector('button');
+ctabutt.textContent = siteContent['cta'] ['button'];
+
+const ctaimg = document.getElementById('cta-img');
+ctaimg.setAttribute('src', siteContent['cta']['img-src'])
+//cta-img in html
+
+const meowmain = document.querySelectorAll('h4')
+meowmain[0].textContent = siteContent['main-content'] ['features-h4']
+meowmain[1].textContent = siteContent['main-content'] ['about-h4']
+meowmain[2].textContent = siteContent['main-content'] ['services-h4']
+meowmain[3].textContent = siteContent['main-content'] ['product-h4']
+meowmain[4].textContent = siteContent['main-content'] ['vision-h4']
+
+const meowcontent = document.querySelectorAll('p')
+meowcontent[0].textContent = siteContent['main-content'] ['features-content']
+meowcontent[1].textContent = siteContent['main-content'] ['about-content']
+meowcontent[2].textContent = siteContent['main-content'] ['services-content']
+meowcontent[3].textContent = siteContent['main-content'] ['product-content']
+meowcontent[4].textContent = siteContent['main-content'] ['vision-content']
+
+const middlei = document.getElementById('middle-img');
+middlei.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+
+const meowcontact = document.querySelectorAll('.contact h4')
+meowcontact[0].textContent = siteContent['contact'] ['contact-h4']
+
+
+// const meowcontact = document.querySelector('.contact h4')
+// meowcontact.textContent = siteContent['contact'] ['contact-h4']
+//prob the right way to do it
+
+
+
+const meowadd = document.querySelectorAll('.contact p')
+meowadd[0].textContent = siteContent['contact'] ['address']
+meowadd[1].textContent = siteContent['contact'] ['phone']
+meowadd[2].textContent = siteContent['contact'] ['email']
+
+
+const meowfooter = document.querySelector('footer')
+meowfooter.textContent = siteContent['footer'] ['copyright']
+
+// const meownavs = document.querySelectorAll('nav a');
+// meownavs[0].textContent = siteContent['nav'] ['nav-item-1']
+// meownavs[1].textContent = siteContent['nav'] ['nav-item-2']
+// meownavs[2].textContent = siteContent['nav'] ['nav-item-3']
+// meownavs[3].textContent = siteContent['nav'] ['nav-item-4']
+// meownavs[4].textContent = siteContent['nav'] ['nav-item-5']
+// meownavs[5].textContent = siteContent['nav'] ['nav-item-6']
+
+document.querySelectorAll('nav a').forEach ( element => {
+  element.style.color = "green";});
+
+
+// document.querySelector('nav a').appendChild(nav) [7] 
+
+const childElement = document.createElement('a');
+childElement.textContent = "Meow"
+childElement.style.color = 'green'
+//Use createElement when creating something new to add it on without erasing other things
+
+
+const parentElement = document.querySelector('nav');
+parentElement.appendChild(childElement)
+
+const secondItem = document.createElement('a');
+secondItem.textContent = "Kitty"
+
+parentElement.prepend(secondItem)
+secondItem.style.color = 'green'
+
+document.querySelectorAll('h4').forEach ( element => {
+  element.style.color = "hotpink";});
+
+  document.querySelectorAll('p').forEach ( element => {
+    element.style.color = "purple";});
+
+    document.querySelectorAll('button').forEach ( element => {
+      element.style.backgroundColor = "hotpink";});
+
+      document.querySelectorAll('body').forEach ( element => {
+        element.style.backgroundColor = "lightblue";});

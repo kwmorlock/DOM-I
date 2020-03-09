@@ -95,3 +95,32 @@ meowadd[2].textContent = siteContent['contact'] ['email']
 
 const meowfooter = document.querySelector('footer')
 meowfooter.textContent = siteContent['footer'] ['copyright']
+
+// const meownavs = document.querySelectorAll('nav a');
+// meownavs[0].textContent = siteContent['nav'] ['nav-item-1']
+// meownavs[1].textContent = siteContent['nav'] ['nav-item-2']
+// meownavs[2].textContent = siteContent['nav'] ['nav-item-3']
+// meownavs[3].textContent = siteContent['nav'] ['nav-item-4']
+// meownavs[4].textContent = siteContent['nav'] ['nav-item-5']
+// meownavs[5].textContent = siteContent['nav'] ['nav-item-6']
+
+document.querySelectorAll('nav a').forEach ( element => {
+  element.style.color = "green";});
+
+
+// document.querySelector('nav a').appendChild(nav) [7] 
+
+const childElement = document.createElement('a');
+childElement.textContent = "Meow"
+//Use createElement when creating something new to add it on without erasing other things
+
+
+const parentElement = document.querySelector('nav');
+parentElement.appendChild(childElement)
+
+const secondItem = document.createElement('a');
+secondItem.textContent = "Kitty"
+
+parentElement.prepend(secondItem)
+
+

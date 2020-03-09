@@ -49,4 +49,14 @@ meownav[3].textContent = siteContent['nav'] ['nav-item-4']
 meownav[4].textContent = siteContent['nav'] ['nav-item-5']
 meownav[5].textContent = siteContent['nav'] ['nav-item-6']
 
-//hmm
+const ctah = document.querySelector('h1');
+ctah.textContent = siteContent['cta'] ['h1'];
+
+const ctabutt = document.querySelector('button');
+ctabutt.textContent = siteContent['cta'] ['button'];
+
+const ctaimg = document.getElementById('cta-img');
+ctaimg.setAttribute('src', siteContent['cta']['img-src'])
+
+
+

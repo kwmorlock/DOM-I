@@ -40,3 +40,12 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const meownav = document.querySelectorAll('nav a')
+meownav[0].textContent = siteContent['nav'] ['nav-item-1']
+meownav[1].textContent = siteContent['nav'] ['nav-item-2']
+meownav[2].textContent = siteContent['nav'] ['nav-item-3']
+meownav[3].textContent = siteContent['nav'] ['nav-item-4']
+meownav[4].textContent = siteContent['nav'] ['nav-item-5']
+meownav[5].textContent = siteContent['nav'] ['nav-item-6']
+

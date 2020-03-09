@@ -123,4 +123,14 @@ secondItem.textContent = "Kitty"
 
 parentElement.prepend(secondItem)
 
+document.querySelectorAll('h4').forEach ( element => {
+  element.style.color = "hotpink";});
 
+  document.querySelectorAll('p').forEach ( element => {
+    element.style.color = "purple";});
+
+    document.querySelectorAll('button').forEach ( element => {
+      element.style.backgroundColor = "hotpink";});
+
+      document.querySelectorAll('body').forEach ( element => {
+        element.style.backgroundColor = "lightblue";});

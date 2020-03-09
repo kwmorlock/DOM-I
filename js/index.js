@@ -57,6 +57,25 @@ ctabutt.textContent = siteContent['cta'] ['button'];
 
 const ctaimg = document.getElementById('cta-img');
 ctaimg.setAttribute('src', siteContent['cta']['img-src'])
+//cta-img in html
+
+const meowmain = document.querySelectorAll('h4')
+meowmain[0].textContent = siteContent['main-content'] ['features-h4']
+meowmain[1].textContent = siteContent['main-content'] ['about-h4']
+meowmain[2].textContent = siteContent['main-content'] ['services-h4']
+meowmain[3].textContent = siteContent['main-content'] ['product-h4']
+meowmain[4].textContent = siteContent['main-content'] ['vision-h4']
+
+const meowcontent = document.querySelectorAll('p')
+meowcontent[0].textContent = siteContent['main-content'] ['features-content']
+meowcontent[1].textContent = siteContent['main-content'] ['about-content']
+meowcontent[2].textContent = siteContent['main-content'] ['services-content']
+meowcontent[3].textContent = siteContent['main-content'] ['product-content']
+meowcontent[4].textContent = siteContent['main-content'] ['vision-content']
+
+const middlei = document.getElementById('middle-img');
+middlei.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 
-
+const meowcontact = document.querySelectorAll('h4')
+meowcontact[0].textContent = siteContent['contact'] ['contact-h4']
